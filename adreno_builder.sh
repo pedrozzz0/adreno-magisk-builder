@@ -62,7 +62,6 @@ move_file "$url1" "$(pwd)/system/vendor/lib/" \
   libllvm-qcom.so \
   libadreno_app_profiles.so \
   libllvm-qgl.so \
-  libadreno_utils.so" \
   libbase64.so" \
   libgame_enhance.so \
   libgpu_tonemapper.so \
@@ -85,10 +84,7 @@ move_file "$url2" "$(pwd)/system/vendor/lib64/" \
   libllvm-glnext.so \
   libOpenCL.so \
   libllvm-qcom.so \
-  libadreno_app_profiles.so \
   libllvm-qgl.so \
-  libadreno_utils.so" \
-  libbase64.so" \
   libgame_enhance.so \
   libgpu_tonemapper.so \
   libgpudataproducer.so \

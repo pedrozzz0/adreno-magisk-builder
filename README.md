@@ -16,7 +16,7 @@ To use the Adreno Magisk Driver Builder script, follow these steps:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/pedrozzz0/adreno-magisk-builder.git
+   git clone https://github.com/pedrozzz0/adreno-magisk-builder
    ```
 
 2. Change to the repository's directory:
@@ -40,10 +40,14 @@ To use the Adreno Magisk Driver Builder script, follow these steps:
    Example usage:
 
    ```bash
-   ./adreno-driver-installer.sh <vendor_name> <device_model> <branch_name>
+   ./adreno_builder.sh <vendor_name> <device_model> <branch_name>
+   ```
+   or
+   ```bash
+   sh adreno_builder.sh <vendor_name> <device_model> <branch_name>
    ```
 
-   Replace `<vendor_name>` with the appropriate vendor (e.g., Samsung), `<device_model>` with the specific model or codename of your device, and `<branch_name>` with the desired branch name.
+   Replace `<vendor_name>` with the appropriate vendor (e.g., Samsung), `<device_model>` with the specific model or codename of the device, and `<branch_name>` with the desired branch name. Please note that the source for the libraries is [Android Dumps](https://dumps.tadiphone.dev/dumps) so you may need to check it out to find the devices and branches available.
 
 ## Disclaimer
 

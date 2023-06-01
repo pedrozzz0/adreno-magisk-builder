@@ -278,10 +278,10 @@ description=OpenGL & Vulkan driver
 if [ $(command -v zip) ]; then
 	echo "Process done, zip the driver?"
 	read zip
-	if [ "$zip" == "Y" ] || [ "$zip" == "y" ]; then
+	if [ "$zip" = "Y" ] || [ "$zip" = "y" ]; then
 	echo "Input the driver name: "
 	read driver_name
-	if [ "$driver_name" == "" ]; then
+	if [ "$driver_name" = "" ]; then
 	driver_name="Adreno_GPU_Driver"
 	fi
 	zip -r9 -ll "$driver_name.zip" . -x adreno_builder.sh

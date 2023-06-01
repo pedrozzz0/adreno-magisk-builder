@@ -62,7 +62,6 @@ move_file "$url1" "$(pwd)/system/vendor/lib/" \
   libllvm-qcom.so \
   libadreno_app_profiles.so \
   libllvm-qgl.so \
-  libbase64.so" \
   libgame_enhance.so \
   libgpu_tonemapper.so \
   libgpudataproducer.so \

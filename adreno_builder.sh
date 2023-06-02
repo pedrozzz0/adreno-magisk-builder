@@ -333,11 +333,7 @@ if [ $(command -v zip) ]; then
 	echo "Input the driver name: "
 	read driver_name
 	fi
-	if [ "$driver_name" = "" ]; then
-	driver_name="Adreno_GPU_Driver"
-	fi
 	zip -r9 "$driver_name.zip" . -x adreno_builder.sh -x README.md -x LICENSE -x *.git*
-	fi
 	echo "Done!"
 else
 	echo "Process done!"

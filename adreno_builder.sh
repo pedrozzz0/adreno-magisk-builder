@@ -39,6 +39,8 @@ mkdir -p $(pwd)/system/vendor/firmware \
 		 $(pwd)/system/vendor/lib64/hw \
 		 $(pwd)/system/system/lib \
 		 $(pwd)/system/system/lib64
+} || {
+	rm -rf $(pwd)/system/vendor/firmware/* # Remove existing FW just in case
 }
 
 move_file() {
@@ -198,9 +200,7 @@ echo "#MAGISK" > $(pwd)/META-INF/com/google/android/updater-script
 fi
 
 if [ ! -f $(pwd)/customize.sh ]; then
-echo 'MODVER=$(grep_prop version $MODPATH/module.prop)
-MODVERCODE=$(grep_prop versionCode $MODPATH/module.prop)
-ui_print "- Adreno GPU Driver by p3dr0"
+echo 'ui_print "- Adreno GPU Driver by p3dr0"
 ui_print ""
 ui_print "- This GPU driver may not work properly in some custom roms"
 

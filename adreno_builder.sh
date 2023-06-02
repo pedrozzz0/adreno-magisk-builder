@@ -334,7 +334,7 @@ if [ $(command -v zip) ]; then
 	echo "Input the driver name: "
 	read driver_name
 	fi
-	zip -r9 "$driver_name.zip" . -x adreno_builder.sh -x README.md -x LICENSE -x *.git*
+	zip -r9 "$driver_name.zip" . -x adreno_builder.sh -x README.md -x LICENSE -x *.git* -x *zip
 	echo "Done!"
 else
 	echo "Process done!"

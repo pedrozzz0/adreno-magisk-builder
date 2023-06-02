@@ -4,8 +4,6 @@
 # By p3dr0 (pedrozzz0 @ Github)
 # TODO: Dynamically download *_sqe and *_gmu
 
-set +x
-
 if [ $# -eq 0 ]; then
     echo "Adreno GPU Driver Builder 1.0
 by pedrozzz0

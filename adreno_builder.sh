@@ -309,6 +309,7 @@ ui_print ""
 ui_print "- Reboot to the drivers be applied"
 ui_print ""
 ' > $(pwd)/customize.sh
+fi
 
 if [ ! -f "$(pwd)/system.prop" ]; then
 echo "# Zygote HideCrash Fix

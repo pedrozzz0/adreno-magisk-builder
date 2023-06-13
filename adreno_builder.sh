@@ -120,12 +120,12 @@ move_file "$url4" "$(pwd)/system/vendor/lib64/egl/" \
   libq3dtools_esx.so
 
 move_file "$url5" "$(pwd)/system/vendor/lib/hw/" \
-  android.hardware.renderscript@1.0-impl.so \
+#  android.hardware.renderscript@1.0-impl.so \
   gralloc.default.so \
   vulkan.adreno.so 
 
 move_file "$url6" "$(pwd)/system/vendor/lib64/hw/" \
-  android.hardware.renderscript@1.0-impl.so \
+#  android.hardware.renderscript@1.0-impl.so \
   gralloc.default.so \
   vulkan.adreno.so 
 

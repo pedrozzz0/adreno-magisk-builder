@@ -37,8 +37,8 @@ mkdir -p $(pwd)/system/vendor/firmware \
          $(pwd)/system/vendor/lib/hw \
 		 $(pwd)/system/vendor/lib64/egl \
 		 $(pwd)/system/vendor/lib64/hw \
-		 $(pwd)/system/system/lib \
-		 $(pwd)/system/system/lib64
+		 $(pwd)/system/lib \
+		 $(pwd)/system/lib64
 } || {
 	rm -rf $(pwd)/system/vendor/firmware/* # Remove existing FW just in case
 }
@@ -153,10 +153,10 @@ move_file "$url8" "$(pwd)/system/vendor/firmware/" \
   a740_sqe.fw \
   a740_gmu.bin
 
-move_file "$url9" "$(pwd)/system/system/lib/" \
+move_file "$url9" "$(pwd)/system/lib/" \
   libdmabufheap.so
 
-move_file "$url10" "$(pwd)/system/system/lib64/" \
+move_file "$url10" "$(pwd)/system/lib64/" \
   libdmabufheap.so
 
 if [ ! -d "$(pwd)/META-INF" ]; then
@@ -238,7 +238,7 @@ set_perm_recursive $MODPATH/system/vendor/lib/libadreno_app_profiles.so 0 0 0755
 set_perm_recursive $MODPATH/system/vendor/lib/libadreno_utils.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
 set_perm_recursive $MODPATH/system/vendor/lib/libbase64.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
 set_perm_recursive $MODPATH/system/vendor/lib/libCB.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
-set_perm_recursive $MODPATH/system/system/lib/libdmabufheap.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
+set_perm_recursive $MODPATH/system/lib/libdmabufheap.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
 set_perm_recursive $MODPATH/system/vendor/lib/libEGL_adreno.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
 set_perm_recursive $MODPATH/system/vendor/lib/libgame_enhance.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
 set_perm_recursive $MODPATH/system/vendor/lib/libGLESv2_adreno.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
@@ -260,7 +260,7 @@ set_perm_recursive $MODPATH/system/vendor/lib64/libadreno_app_profiles.so 0 0 07
 set_perm_recursive $MODPATH/system/vendor/lib64/libadreno_utils.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
 set_perm_recursive $MODPATH/system/vendor/lib64/libbase64.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
 set_perm_recursive $MODPATH/system/vendor/lib64/libCB.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
-set_perm_recursive $MODPATH/system/system/lib64/libdmabufheap.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
+set_perm_recursive $MODPATH/system/lib64/libdmabufheap.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
 set_perm_recursive $MODPATH/system/vendor/lib64/libEGL_adreno.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
 set_perm_recursive $MODPATH/system/vendor/lib64/libgame_enhance.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
 set_perm_recursive $MODPATH/system/vendor/lib64/libGLESv2_adreno.so 0 0 0755 0644 u:object_r:same_process_hal_file:s0
